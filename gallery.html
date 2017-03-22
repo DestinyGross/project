@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  
+<title>ChrystylesHairStudio</title>
+  
+  <!--logo with title-->
+<h1><img src="logo.png" alt="other" height="50" width="100">Chrystyles Hair Stuido</h1>
+  
+  <ul id="navbar">
+<li><a href="#/Home">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+ <li><a href="services.html">Services</a></li>
+ <li><a href="index.html" class="selected">Gallery</a></li>
+ <li><a href="weave.html">Hair Weave</a></li>
+  <li><a href="contactinformation.html">Contact Information</a></li>
+  </ul>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color:;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+  
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+
+<body>  
+  <div class="row">
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1487078728634" style="width:50%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014452974.jpg" style="width:50%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1487078794478.jpg" style="width:50%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1487078818084.jpg" style="width:50%"  onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+    <img src="thumbnail_FB_IMG_1487078917274.jpg" style="width:50%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1487078961326.jpg" style="width:50%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014435923.jpg" style="width:50%" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">  
+    <img src="thumbnail_FB_IMG_1490014439634.jpg" style="width:50%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <img src="thumbnail_FB_IMG_1490014452974.jpg" style="width:50%" onclick="openModal();currentSlide(9)" class="hover-shadow">
+
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014456458" style="width:50%"  onclick="openModal();currentSlide(10)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014494666" style="width:50%" onclick="openModal();currentSlide(11)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014497981.jpg" style="width:50%" onclick="openModal();currentSlide(12)" class="hover-shadow">
+    
+    <div class="column">
+    <img src="thumbnail_FB_IMG_1490014504380" style="width:50%" onclick="openModal();currentSlide(13)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014507973.jpg" style="width:50%"  onclick="openModal();currentSlide(14)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014513341.jpg" style="width:50%"  onclick="openModal();currentSlide(15)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014518452" style="width:50%" onclick="openModal();currentSlide(16)" class="hover-shadow">
+  </div>
+    <div class="column">
+    <img src="thumbnail_FB_IMG_1490014539642.jpg" style="width:50%" onclick="openModal();currentSlide(17)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014556097.jpg" style="width:50%" onclick="openModal();currentSlide(18)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014567379" style="width:50%" onclick="openModal();currentSlide(19)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014604982" style="width:50%" onclick="openModal();currentSlide(20)" class="hover-shadow">
+  </div>
+    <div class="column">
+    <img src="thumbnail_FB_IMG_1490014621040" style="width:50%" onclick="openModal();currentSlide(21)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014632732.jpg" style="width:50%" onclick="openModal();currentSlide(22)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014656719.jpg" style="width:50%" onclick="openModal();currentSlide(23)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="thumbnail_FB_IMG_1490014667101.jpg" style="width:50%" onclick="openModal();currentSlide(24)" class="hover-shadow">
+  </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 /24</div>
+        <img src="thumbnail_FB_IMG_1487078728634" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014452974.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 24</div>
+        <img src="thumbnail_FB_IMG_1487078794478.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 24</div>
+        <img src="thumbnail_FB_IMG_1487078818084.jpg" style="width:30%">
+    </div>
+    
+     <div class="mySlides">
+      <div class="numbertext">5 / 24</div>
+        <img src="thumbnail_FB_IMG_1487078917274.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 24</div>
+        <img src="thumbnail_FB_IMG_1487078961326.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014435923.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014439634.jpg" style="width:30%">
+    </div>
+    
+     <div class="mySlides">
+      <div class="numbertext">9 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014439634.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014456458" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014494666" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014497981.jpg" style="width:30%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">13 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014504380" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14/ 24</div>
+        <img src="thumbnail_FB_IMG_1490014507973.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014513341.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16/ 24</div>
+        <img src="thumbnail_FB_IMG_1490014518452" style="width:30%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">17 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014539642.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">18 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014556097.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">19 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014567379" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">20 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014604982" style="width:30%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">21 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014621040" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">22 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014632732.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">23 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014656719.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">24 / 24</div>
+        <img src="thumbnail_FB_IMG_1490014667101.jpg" style="width:30%">
+    </div>
+    
+    
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+</div>
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
