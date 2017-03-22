@@ -1,0 +1,109 @@
+/***********************************************
+Top bar color 
+***********************************************/
+
+html {
+  border-top: 16px solid #ffcccc;
+background-color: #ADD8E6;
+}
+
+
+
+/***********************************************
+Body styling 
+***********************************************/
+
+body {
+max-width: 900px;
+margin: 0 ;
+padding: 20px 20px;
+font-size: 1.3em;
+line-height: 1.5em;
+  font-family: ''Courgette', cursive;
+color: #000;
+font-weight: 300;
+}
+
+
+
+/***********************************************
+Image styling 
+***********************************************/
+
+iframe {
+    padding: 100px 120px 100px 120px;
+    margin: 10px 0 68px 0;
+  
+  }
+
+
+
+/***********************************************
+Headline styling 
+***********************************************/
+.main-heading {
+font-size: 3em;
+line-height: .5em;
+color: #8B008B;
+  text-align: center;
+  
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Courgette', cursive;
+  
+}
+
+
+h1 {
+font-size: .67 em;
+line-height: 1em;
+font-weight: normal;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+h4 {
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: 'Courgette', cursive;
+}
+  
+/***********************************************
+Navigation styling 
+***********************************************/
+#nav {
+  width: 100%;
+  float: left;
+  list-style: none;
+  margin: 0 0 3em 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+#nav li {
+  float: left;
+  font-family: 'Courgette', cursive;
+}
+
+#nav li a {
+display: inline;
+  padding: 8px 15px;
+text-decoration: none;
+font-weight:normal;
+border-right: 1px solid #000;
+  color: #8B008B;
+  text-align: center;
+}
