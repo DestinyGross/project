@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<!-- your webpage info goes here -->
+     
+ <tilte>ChrystylesHairStudio</tilte>
+ 
+   
+ <h1><img src="logo.png" alt="other" height="50" width="100">Chrystyles Hair Stuido</h1>
+  
+ <ul id="navbar">
+<li><a href="index.html"class="selected">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="weave.html">Hair Weave</a></li>
+<li><a href="contactinformation.html">Contact Information</a></li>
+</ul>   
+</head>
+<body>
+
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="thumbnail_FB_IMG_1487078728634" style="width:50%">
+  <img class="mySlides" src="thumbnail_FB_IMG_1487078758626.jpg" style="width:50%">
+  <img class="mySlides" src="thumbnail_FB_IMG_1487078794478" style="width:100%">
+  <img class="mySlides" src="thumbnail_FB_IMG_1487078818084.jpg" style="width:50%">
+  <img class="mySlides" src="thumbnail_FB_IMG_1487078917274.jpg" style="width:50%">
+  <img class="mySlides" src="thumbnail_FB_IMG_1487078961326" style="width:50%">
+  <img class="mySlides" src="thumbnail_FB_IMG_1490014518452" style="width:100%">
+  <img class="mySlides" src="thumbnail_FB_IMG_1490014539642.jpg" style="width:100%"> 
+
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>   
+   
+  
+   
+   
+<p> "WHERE BEAUTY IS ENHANCED GIVING YOU THAT CONFIDENCE WITHIN" </p>
+ 
+ <ul> Tips On Taking Care Of Your Hair</ul>
+<ol>1. Wash your hair once every 1 to 2 weeks.</ol>
+<ol>2. Consider washing your hair with just conditioner every 3 to 5 days..</ol>
+<ol>3. Use a moisturizing conditioner with lightweight, essential oils </ol>
+<ol>4. Don't use products that contain silicones and sulfates. </ol>
+<ol>5. Consider using products with "organic" ingredients over products with "natural" ingredients.</ol>    
+   
+
+
+   
+   
+</body>
+</html>     
